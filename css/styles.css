@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100");
+  background-position: center;
+  background-size: cover;
+  padding: 10rem;
+  font-family: 'Roboto', sans-serif; }
+  @media screen and (max-width: 1100px) {
+    body {
+      padding: 5rem 0; } }
+
+.container {
+  display: flex; }
+
+#result {
+  /* Glassmorphism card effect */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(46, 79, 79, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  color: #cbe4de;
+  padding: 5rem;
+  font-size: 2.5rem;
+  border-radius: 5rem;
+  position: relative; }
+  @media screen and (max-width: 700px) {
+    #result {
+      display: none; } }
+
+.main {
+  /* Glassmorphism card effect */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(46, 79, 79, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem;
+  font-size: 2.5rem;
+  border-radius: 5rem;
+  position: relative; }
+  @media screen and (max-width: 700px) {
+    .main {
+      margin-right: 0; } }
+  .main__header {
+    margin-bottom: 0.5rem;
+    line-height: 7 0.5rem;
+    color: #cbe4de;
+    border-bottom: 5px solid #fff; }
+  .main__calc {
+    margin-top: 3rem;
+    height: 4rem;
+    width: 100%;
+    display: inline-block;
+    border-style: none;
+    border-radius: 1rem;
+    background-color: rgba(46, 79, 79, 0.75);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #cbe4de;
+    cursor: pointer; }
+    .main__calc:hover {
+      transform: scale(1.01);
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15); }
+    .main__calc:active {
+      transform: scale(0.99); }
+    @media screen and (max-width: 1300px) {
+      .main__calc {
+        font-size: 50%; } }
+  .main__result {
+    margin-top: 2rem;
+    height: 100rem;
+    width: 100%;
+    display: inline-block;
+    border-style: none;
+    border-radius: 1rem;
+    background-color: #cbe4de;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3333;
+    display: flex;
+    -webkit-box-shadow: inset 10px 10px 44px -7px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: inset 10px 10px 44px -7px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 10px 10px 44px -7px rgba(0, 0, 0, 0.24);
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: none; }
+    @media screen and (max-width: 700px) {
+      .main__result {
+        display: block; } }
+
+.choice {
+  margin: 3rem 1rem 5rem 1rem;
+  display: flex;
+  justify-content: space-around; }
+  .choice__btn {
+    background: #cbe4de;
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 10%;
+    border-style: none;
+    color: #2e4f4f;
+    font-weight: 400;
+    cursor: pointer; }
+    @media screen and (max-width: 1100px) {
+      .choice__btn {
+        font-size: 50%; } }
+    .choice__btn-metodo {
+      background: #cbe4de;
+      margin: 2px;
+      display: inline-block;
+      font-size: 2rem;
+      padding: 1.5rem;
+      border-radius: 10%;
+      border-style: none;
+      color: #2e4f4f;
+      font-weight: 400;
+      cursor: pointer; }
+      .choice__btn-metodo:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15); }
+      @media screen and (max-width: 1100px) {
+        .choice__btn-metodo {
+          font-size: 50%;
+          margin: 3px; } }
+    .choice__btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15); }

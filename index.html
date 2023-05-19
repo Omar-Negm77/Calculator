@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Poppins:ital,wght@0,100;0,900;1,100;1,200&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="container">
+			<form action="/" class="main" id="main">
+				<h3 class="main__header">Matrice:</h3>
+				<div class="choice">
+					<button class="choice__btn">spa1</button>
+					<button class="choice__btn">spa2</button>
+					<button class="choice__btn">vem1</button>
+					<button class="choice__btn">vem2</button>
+				</div>
+				<br />
+				<h3 class="main__header">Tolleranza:</h3>
+				<div class="choice">
+					<button class="choice__btn">-4</button>
+					<button class="choice__btn">-6</button>
+					<button class="choice__btn">-8</button>
+					<button class="choice__btn">-10</button>
+				</div>
+
+				<br />
+				<h3 class="main__header">Metodo:</h3>
+				<div class="choice">
+					<button class="choice__btn-metodo">Jacobi</button>
+					<button class="choice__btn-metodo">Gauss-Seidel</button>
+					<button class="choice__btn-metodo">Gradiente</button>
+					<button class="choice__btn-metodo">Gradiente coniugato</button>
+					<button class="choice__btn-metodo">Tutti</button>
+				</div>
+
+				<button class="main__calc" type="submit">Calculate</button>
+				<div class="main__result">{Result}</div>
+			</form>
+			<div id="result">
+				<div class="result">{Result}</div>
+				<button class="main__calc" type="submit">Clear Result</button>
+			</div>
+		</div>
+	</body>
+</html>
+
+<!-- Di el picklist values
+Matrice:
+spa1
+spa2
+vem1
+vem2
+
+Tolleranza:
+-4
+-6
+-8
+-10
+
+Metodo:
+Jacobi
+Gauss-Seidel
+Gradiente
+Gradiente coniugato
+Tutti -->
